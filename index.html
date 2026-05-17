@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bistro De Eiken | Restaurant Enschede</title>
+  <meta name="description" content="Bistro De Eiken — gezellig restaurant in Enschede. Huisgemaakte gerechten, seizoensgebonden menu en een warm welkom. Reserveer nu." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__logo">
+        <span class="nav__logo-icon">🌿</span>
+        <div>
+          <span class="nav__logo-name">Bistro De Eiken</span>
+          <span class="nav__logo-sub">Restaurant & Bar</span>
+        </div>
+      </div>
+      <nav class="nav__links">
+        <a href="#menu">Menu</a>
+        <a href="#over">Over ons</a>
+        <a href="#sfeer">Sfeer</a>
+        <a href="#reserveren">Reserveren</a>
+      </nav>
+      <a href="#reserveren" class="btn btn--primary btn--nav">Tafel reserveren</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#menu">Menu</a>
+      <a href="#over">Over ons</a>
+      <a href="#sfeer">Sfeer</a>
+      <a href="#reserveren">Reserveren</a>
+      <a href="#reserveren" class="btn btn--primary">Tafel reserveren</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__label">Welkom bij</p>
+      <h1 class="hero__title">Bistro<br><em>De Eiken</em></h1>
+      <p class="hero__sub">Huisgemaakte gerechten met verse, lokale ingrediënten.<br>Een warm welkom in het hart van Enschede.</p>
+      <div class="hero__cta">
+        <a href="#reserveren" class="btn btn--warm btn--lg">Reserveer een tafel</a>
+        <a href="#menu" class="btn btn--outline btn--lg">Bekijk ons menu</a>
+      </div>
+      <div class="hero__info">
+        <div class="hero__info-item">🕐 Ma–Za: 17:00–22:30</div>
+        <div class="hero__info-divider">·</div>
+        <div class="hero__info-item">📍 Oude Markt 7, Enschede</div>
+        <div class="hero__info-divider">·</div>
+        <div class="hero__info-item">📞 053 123 45 67</div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- KENMERKEN -->
+  <section class="kenmerken">
+    <div class="container kenmerken__grid">
+      <div class="kenmerk">
+        <div class="kenmerk__icon">🥬</div>
+        <h3>Verse ingrediënten</h3>
+        <p>Wij werken uitsluitend met lokale leveranciers en seizoensgebonden producten.</p>
+      </div>
+      <div class="kenmerk">
+        <div class="kenmerk__icon">👨‍🍳</div>
+        <h3>Huisgemaakt</h3>
+        <p>Van sauzen tot desserts — alles wordt vers bereid door ons ervaren keukenteam.</p>
+      </div>
+      <div class="kenmerk">
+        <div class="kenmerk__icon">🍷</div>
+        <h3>Wijnkaart</h3>
+        <p>Een zorgvuldig samengestelde wijnkaart met Europese wijnen voor elk gerecht.</p>
+      </div>
+      <div class="kenmerk">
+        <div class="kenmerk__icon">🏡</div>
+        <h3>Gezellige sfeer</h3>
+        <p>Rustiek interieur, zachte verlichting en een warme bediening die u thuis laat voelen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Wat wij serveren</p>
+        <h2>Ons menu</h2>
+        <p class="section-sub">Seizoensgebonden en vers — elke dag met passie bereid.</p>
+      </div>
+
+      <div class="menu__tabs" id="menuTabs">
+        <button class="menu__tab active" data-category="starters">Voorgerechten</button>
+        <button class="menu__tab" data-category="mains">Hoofdgerechten</button>
+        <button class="menu__tab" data-category="desserts">Desserts</button>
+        <button class="menu__tab" data-category="drinks">Dranken</button>
+      </div>
+
+      <div class="menu__grid" id="menuGrid">
+        <!-- Filled by JS -->
+      </div>
+
+      <p class="menu__note">Heeft u allergieën of dieetwensen? Informeer ons bij uw reservering of vraag ons personeel.</p>
+    </div>
+  </section>
+
+  <!-- OVER ONS -->
+  <section class="over" id="over">
+    <div class="container over__inner">
+      <div class="over__visual">
+        <div class="over__img over__img--main">
+          <div class="over__img-inner">
+            <span>🍽️</span>
+            <p>Ons interieur</p>
+          </div>
+        </div>
+        <div class="over__img over__img--small">
+          <div class="over__img-inner">
+            <span>👨‍🍳</span>
+            <p>Onze keuken</p>
+          </div>
+        </div>
+        <div class="over__badge">
+          <strong>Geopend</strong>
+          <span>sinds 2014</span>
+        </div>
+      </div>
+      <div class="over__content">
+        <p class="section-label">Ons verhaal</p>
+        <h2>Tien jaar lang<br><em>met hart en ziel</em></h2>
+        <p>Bistro De Eiken werd in 2014 opgericht door chef-kok Thomas en zijn vrouw Lisa. Wat begon als een kleine eetcafé in de Enschedese binnenstad is uitgegroeid tot een geliefde plek voor families, stelletjes en vrienden.</p>
+        <p>Onze filosofie is eenvoudig: eerlijk eten, eerlijke prijzen en een avond die je bijblijft. We koken met ingrediënten van lokale boeren en markten — vers, puur en vol smaak.</p>
+        <div class="over__cijfers">
+          <div class="over__cijfer">
+            <strong>10+</strong>
+            <span>jaar ervaring</span>
+          </div>
+          <div class="over__cijfer">
+            <strong>4.8★</strong>
+            <span>op Google</span>
+          </div>
+          <div class="over__cijfer">
+            <strong>5000+</strong>
+            <span>tevreden gasten</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SFEER -->
+  <section class="sfeer" id="sfeer">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">De beleving</p>
+        <h2>Sfeer & Interieur</h2>
+        <p class="section-sub">Warm, rustiek en uitnodigend — bij ons voelt u zich meteen thuis.</p>
+      </div>
+      <div class="sfeer__grid">
+        <div class="sfeer__item sfeer__item--large">
+          <div class="sfeer__placeholder"><span>🕯️</span><p>Terras bij avond</p></div>
+        </div>
+        <div class="sfeer__item">
+          <div class="sfeer__placeholder"><span>🍷</span><p>Wijnbar</p></div>
+        </div>
+        <div class="sfeer__item">
+          <div class="sfeer__placeholder"><span>🌿</span><p>Binnenruimte</p></div>
+        </div>
+        <div class="sfeer__item sfeer__item--wide">
+          <div class="sfeer__placeholder"><span>🥗</span><p>Gerechten</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVEREN -->
+  <section class="reserveren" id="reserveren">
+    <div class="container">
+      <div class="reserveren__inner">
+        <div class="reserveren__content">
+          <p class="section-label section-label--warm">Reserveer een tafel</p>
+          <h2>We zien u<br><em>graag komen</em></h2>
+          <p>Reserveer eenvoudig online of bel ons direct. Wij zorgen voor een onvergetelijke avond.</p>
+          <div class="reserveren__openingstijden">
+            <h4>Openingstijden</h4>
+            <div class="ot__grid">
+              <span>Maandag – Vrijdag</span><span>17:00 – 22:30</span>
+              <span>Zaterdag</span><span>16:00 – 23:00</span>
+              <span>Zondag</span><span>Gesloten</span>
+            </div>
+          </div>
+          <div class="reserveren__contact">
+            <a href="tel:0531234567" class="reserveren__contact-item">
+              <span>📞</span>
+              <div><strong>Bel ons</strong><p>053 123 45 67</p></div>
+            </a>
+            <a href="mailto:info@bistrodeeiken.nl" class="reserveren__contact-item">
+              <span>📧</span>
+              <div><strong>E-mail</strong><p>info@bistrodeeiken.nl</p></div>
+            </a>
+          </div>
+        </div>
+        <form class="reserveren__form" id="reserveringForm">
+          <h3>Online reserveren</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="naam">Naam *</label>
+              <input type="text" id="naam" name="naam" placeholder="Jan de Vries" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="jan@email.nl" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="datum">Datum *</label>
+              <input type="date" id="datum" name="datum" required />
+            </div>
+            <div class="form-group">
+              <label for="tijd">Tijd *</label>
+              <select id="tijd" name="tijd" required>
+                <option value="">Kies een tijd...</option>
+                <option>17:00</option>
+                <option>17:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+                <option>20:00</option>
+                <option>20:30</option>
+                <option>21:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="personen">Aantal personen *</label>
+            <select id="personen" name="personen" required>
+              <option value="">Selecteer...</option>
+              <option>1 persoon</option>
+              <option>2 personen</option>
+              <option>3 personen</option>
+              <option>4 personen</option>
+              <option>5 personen</option>
+              <option>6 personen</option>
+              <option>7+ personen (groep)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="wensen">Speciale wensen</label>
+            <textarea id="wensen" name="wensen" rows="3" placeholder="Allergieën, verjaardag, raam tafel..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--warm btn--full">Reservering bevestigen →</button>
+          <p class="form-note">U ontvangt een bevestiging per e-mail binnen enkele minuten.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span>🌿</span>
+          <div>
+            <strong>Bistro De Eiken</strong>
+            <span>Restaurant & Bar</span>
+          </div>
+        </div>
+        <p>Eerlijk eten, eerlijke prijzen,<br>een avond die bijblijft.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navigatie</h4>
+        <a href="#menu">Menu</a>
+        <a href="#over">Over ons</a>
+        <a href="#sfeer">Sfeer</a>
+        <a href="#reserveren">Reserveren</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="tel:0531234567">053 123 45 67</a>
+        <a href="mailto:info@bistrodeeiken.nl">info@bistrodeeiken.nl</a>
+        <p>Oude Markt 7<br>7511 GB Enschede</p>
+      </div>
+      <div class="footer__col">
+        <h4>Openingstijden</h4>
+        <p>Ma–Vr: 17:00–22:30</p>
+        <p>Zaterdag: 16:00–23:00</p>
+        <p>Zondag: Gesloten</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Bistro De Eiken · KVK 12345678 · <a href="#">Privacybeleid</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
