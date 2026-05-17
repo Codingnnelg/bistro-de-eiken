@@ -1,6 +1,6 @@
 Bistro De Eiken — Restaurant Website
 
-Live site: [https://euphonious-licorice-8f7920.netlify.app/](https://euphonious-licorice-8f7920.netlify.app/)
+Live site: https://6a0a18731052838bfa48a22b--eclectic-pika-ed1708.netlify.app/
 
 A warm, elegant one-page restaurant website for a fictional bistro in Enschede. Built as a portfolio project to demonstrate web development skills with a focus on visual design and interactivity.
 
